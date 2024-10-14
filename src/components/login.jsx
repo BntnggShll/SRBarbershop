@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "./style/login.css"
 const Login = () => {
   return (
     <div className="container">
@@ -11,23 +11,22 @@ const Login = () => {
         <h1 className="login-title">Login</h1>
 
         <label htmlFor="email" className="input-label">Your Email</label>
-        <input type="email" id="email" className="input-box" placeholder="Enter your email"/>
+        <input type="email" id="email" className="input-box" />
 
         <label htmlFor="password" className="input-label">Password</label>
-        <input type="password" id="password" className="input-box" placeholder="Enter your password"/>
+        <input type="password" id="password" className="input-box" />
+        <a href="#" className="forgot-password">Forgot Password</a>
 
         <button className="login-btn">Login</button>
-        <a href="#" className="forgot-password">Forgot Password</a>
-        
+
         <div className="register-link">
           Don't have an account? <a href="#">Register</a>
         </div>
       </div>
       
-      {/* Image Section */}
-      <div className="image-section">
-        <img src="login.jpg" alt="Side Image" className="side-image" />
-      </div>
+      {/* <div className="image-section">
+        <img src="/img/Login.jpg" alt="Side Image" className="side-image" />
+      </div> */}
     </div>
   );
 };

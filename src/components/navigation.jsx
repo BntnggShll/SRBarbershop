@@ -72,3 +72,4 @@ export const Navigation = (props) => {
     </nav>
   );
 };
+export default Navigation;
