@@ -1,33 +1,41 @@
-import React from 'react';
-import "./style/login.css"
+import React from "react";
 const Login = () => {
   return (
-    <div className="container">
-      {/* Background Image */}
-      <div className="background"></div>
-      
-      {/* Form Section */}
-      <div className="form-section">
-        <h1 className="login-title">Login</h1>
+    <div id="login">
+      <div className="container-login">
+        {/* Background Image */}
+        <div className="background-login"></div>
+        <img src="../img/Login.jpg" alt="Side Image" className="image-login" />
 
-        <label htmlFor="email" className="input-label">Your Email</label>
-        <input type="email" id="email" className="input-box" />
+        {/* Form Section */}
+        <div className="form-section-login">
+          <h1 className="login-title">Login</h1>
 
-        <label htmlFor="password" className="input-label">Password</label>
-        <input type="password" id="password" className="input-box" />
-        <a href="#" className="forgot-password">Forgot Password</a>
+          <label htmlFor="email" className="input-label-login">
+            Your Email
+          </label>
+          <input type="email" id="email" className="input-box-login" />
 
-        <button className="login-btn">Login</button>
+          <label htmlFor="password" className="input-label-login">
+            Password
+          </label>
+          <input type="password" id="password" className="input-box-login" />
+          <a href="#" className="forgot-password">
+            Forgot Password
+          </a>
 
-        <div className="register-link">
-          Don't have an account? <a href="#">Register</a>
+          <button className="login-btn">Login</button>
+
+          <div className="register-link">
+            Don't have an account? <a href="/register">Register</a>
+          </div>
         </div>
-      </div>
+
+        
       
-      {/* <div className="image-section">
-        <img src="/img/Login.jpg" alt="Side Image" className="side-image" />
-      </div> */}
+      </div>
     </div>
+
   );
 };
 

@@ -10,6 +10,7 @@ import { Testimonials } from "./components/testimonials";
 import { Team } from "./components/Team";
 import { Contact } from "./components/contact";
 import  Login from "./components/login";
+import Register from "./components/register";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
@@ -30,6 +31,7 @@ const App = () => {
       <Routes>
         {/* Route untuk halaman login */}
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register/>}/>
 
         {/* Route untuk halaman utama yang memiliki navigasi */}
         <Route
@@ -39,11 +41,11 @@ const App = () => {
               <Navigation />
               <Header data={landingPageData.Header} />
               <Features data={landingPageData.Features} />
-              <About data={landingPageData.About} />
+              <Team data={landingPageData.Team} />
               <Services data={landingPageData.Services} />
               <Gallery data={landingPageData.Gallery} />
               <Testimonials data={landingPageData.Testimonials} />
-              <Team data={landingPageData.Team} />
+              <About data={landingPageData.About} />
               <Contact data={landingPageData.Contact} />
             </div>
           }

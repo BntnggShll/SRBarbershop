@@ -3,7 +3,7 @@ import React from "react";
 
 export const Gallery = (props) => {
   return (
-    <div id="portfolio" className="text-center">
+    <div id="galery" className="text-center">
       <div className="container">
         <div className="section-title">
           <h2>Gallery</h2>
@@ -13,7 +13,7 @@ export const Gallery = (props) => {
           </p>
         </div>
         <div className="row">
-          <div className="portfolio-items">
+          <div className="galery-items">
             {props.data
               ? props.data.map((d, i) => (
                   <div
